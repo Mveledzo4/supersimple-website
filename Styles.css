@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #004d40;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00acc1;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #80deea;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #00acc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Products Section */
+.products-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.product-display img {
+    width: 300px;
+    border: 2px solid #00acc1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-thumbnails img {
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00acc1;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #00acc1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #007c91;
+}
+
+/* Cart Section */
+.cart-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cart-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-section li {
+    margin-bottom: 10px;
+}
+
+.cart-section button {
+    background-color: #00acc1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-section button:hover {
+    background-color: #007c91;
+}
+
+.shop .product {
+    margin: 20px 0;
+}

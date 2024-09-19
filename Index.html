@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>TeeStyle</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Get Your Stylish T-Shirts Today</h2>
+            <p>Trendy and comfortable designs just for you.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="tshirt1.jpg" alt="Stylish T-Shirt">
+        </div>
+    </section>
+
+    <!-- Product Image Preview Section -->
+    <section class="products-section">
+        <h2>Our T-Shirt Collection</h2>
+        <div class="product-display">
+            <img id="main-product-image" src="tshirt1.jpg" alt="Main T-Shirt Image">
+        </div>
+        <div class="product-thumbnails">
+            <img src="tshirt1.jpg" alt="T-Shirt 1" onclick="changeImage('tshirt1.jpg')">
+            <img src="tshirt2.jpg" alt="T-Shirt 2" onclick="changeImage('tshirt2.jpg')">
+            <img src="tshirt3.jpg" alt="T-Shirt 3" onclick="changeImage('tshirt3.jpg')">
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total Price: $<span id="total-price">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Shop Products Section -->
+    <section class="shop">
+        <h2>Available Products</h2>
+        <div class="product">
+            <p>T-Shirt 1 - $25</p>
+            <button onclick="addToCart('T-Shirt 1', 25)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <p>T-Shirt 2 - $30</p>
+            <button onclick="addToCart('T-Shirt 2', 30)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
